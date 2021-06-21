@@ -87,7 +87,7 @@ class RestClient():
         if pais is None:
             pais = "argentina"
 
-        response = sself.__api_request(method="GET",url=self.__url("portafolio/{}".format(pais)))
+        response = self.__api_request(method="GET",url=self.__url("portafolio/{}".format(pais)))
 
         return response.json()
 
